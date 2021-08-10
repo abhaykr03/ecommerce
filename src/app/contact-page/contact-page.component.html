@@ -1,0 +1,16 @@
+  <div class="content-box">
+    <h3>Send a message to the owner</h3>
+    <div>
+      <label>
+        Enter your email:
+       <input name="email" [(ngModel)]="email">     <!-- member variable email binded two-way using ngModel -->
+       </label>
+    </div>
+    <div>
+      <label>
+        Enter message:
+      <textarea name="message" [(ngModel)]="message" id="" cols="20" rows="5"></textarea>    <!-- member variable email binded two-way using ngModel -->
+      </label>
+    </div>
+    <button mat-flat-button color="primary" (click)="sendMessage()">Send</button>
+  </div>
